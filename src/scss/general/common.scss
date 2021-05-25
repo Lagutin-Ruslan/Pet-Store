@@ -1,0 +1,29 @@
+.page-body {
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+  }
+
+a {
+  text-decoration: none;
+}
+
+li, ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

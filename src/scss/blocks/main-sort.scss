@@ -1,0 +1,99 @@
+.main-sort {
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.main-sort_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main-sort_item {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+}
+.main-sort_item-price,
+.main-sort_item-age {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 15px;
+  color: $basic-black;
+}
+.main-sort_link {
+  display: flex;
+  align-items: center;
+}
+.main-sort_item-icon {
+  width: 12px;
+  height: 6px;
+  margin-left: 5px;
+}
+.main-sort_link:hover li,
+.main-sort_link:hover path {
+  color: $special-tomato;
+  fill: $special-tomato;
+}
+.main-sort_link:active li,
+.main-sort_link:active path {
+  color: $special-tomato;
+  fill: $special-tomato;
+  opacity: 0.7;
+}
+
+
+@media (min-width: $tablet-width) {
+  .main-sort {
+    width: 768px;
+    margin: 0 auto;
+    padding-left: 94px;
+    padding-right: 94px;
+    margin-top: 37px;
+    margin-bottom: 38px;
+  }
+  .main-sort_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 40px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .main-sort {
+    width: 1440px;
+    margin: 0 auto;
+    padding-left: 130px;
+    padding-right: 0;
+    margin-top: 37px;
+    margin-bottom: 38px;
+  }
+  .main-sort_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .main-sort_item {
+    font-size: 18px;
+    margin-right: 48px;
+  }
+  .main-sort_item-price,
+  .main-sort_item-age {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .main-sort_link {
+    margin-right: 55px;
+  }
+  .main-sort_item-icon {
+    width: 15px;
+    height: 15px;
+    margin-left: 20px;
+  }
+}

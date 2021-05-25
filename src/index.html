@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Зоомагазин</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="page-body">
+  <header class="header">
+    <div class="header-wrapper">
+      <div class="header-wrap">
+        <a class="header-link" href="index.html">
+          <svg class="header-link__logo" width="78" height="78" viewBox="0 0 78 78" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M63.0559 28.8815L54.2119 28.8947L27.8012 53.7922H10.0354V36.4593L34.2348 13.8486L17.993 13.8992L0 30.6625V64.1511H34.0283L63.0418 36.5687L63.0559 28.8815Z"
+              fill="white" />
+            <path
+              d="M43.9721 13.8486L14.9586 41.4318L14.9453 49.1182L23.7884 49.1049L50.1991 24.2075H67.9649V41.5404L43.7656 64.1511L60.0074 64.1013L78.0004 47.338V13.8486H43.9721Z"
+              fill="white" />
+          </svg>
+        </a>
+        <div class="header-btn">
+          <a href="#" class="header-btn__nav">
+            <span></span>
+          </a>
+        </div>
+        <div class="header-box">
+          <a class="header-phone" href="tel:+544 3490 00000">+544 3490 00000</a>
+          <p class="header-phone__slogan">Звони скорее!</p>
+        </div>
+      </div>
+      <p class="header-text">Найдено 349 котов</p>
+      <nav class="header-nav hidden">
+        <ul class="header-nav__list">
+          <a href="#">
+            <li class="header-nav__item">Main</li>
+          </a>
+          <a href="#">
+            <li class="header-nav__item">Gallery</li>
+          </a>
+          <a href="#">
+            <li class="header-nav__item">News</li>
+          </a>
+          <a href="#">
+            <li class="header-nav__item">Profile</li>
+          </a>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <h1 class="visually-hidden">Перечень котов</h1>
+    <section class="main-sort">
+      <h2 class="visually-hidden">Меню сортировки</h2>
+      <div class="main-sort_box">
+        <ul class="main-sort_list">
+          <li class="main-sort_item">Сортировать по:</li>
+          <a class="main-sort_link main-sort_link-price" href="#">
+            <li class="main-sort_item-price">Цена</li>
+            <svg class="main-sort_item-icon" width="15" height="9" viewBox="0 0 15 9" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.0853 8.66685L14.7604 1.99166C14.9149 1.83727 15 1.63118 15 1.41142C15 1.19167 14.9149 0.985572 14.7604 0.831183L14.2689 0.339602C13.9487 0.0197263 13.4282 0.0197262 13.1084 0.339602L7.50311 5.94492L1.89157 0.333382C1.73706 0.178993 1.53109 0.0937494 1.31146 0.0937494C1.09158 0.0937494 0.885606 0.178993 0.730973 0.333382L0.239635 0.824963C0.0851249 0.979474 3.76698e-06 1.18545 3.75737e-06 1.4052C3.74777e-06 1.62496 0.0851249 1.83105 0.239635 1.98544L6.9208 8.66685C7.0758 8.82161 7.28275 8.90661 7.50275 8.90612C7.7236 8.90661 7.93042 8.82161 8.0853 8.66685Z"
+                fill="black" />
+            </svg>
+          </a>
+          <a class="main-sort_link main-sort_link-age" href="#">
+            <li class="main-sort_item-age">Возраст</li>
+            <svg class="main-sort_item-icon" width="15" height="9" viewBox="0 0 15 9" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.0853 8.66685L14.7604 1.99166C14.9149 1.83727 15 1.63118 15 1.41142C15 1.19167 14.9149 0.985572 14.7604 0.831183L14.2689 0.339602C13.9487 0.0197263 13.4282 0.0197262 13.1084 0.339602L7.50311 5.94492L1.89157 0.333382C1.73706 0.178993 1.53109 0.0937494 1.31146 0.0937494C1.09158 0.0937494 0.885606 0.178993 0.730973 0.333382L0.239635 0.824963C0.0851249 0.979474 3.76698e-06 1.18545 3.75737e-06 1.4052C3.74777e-06 1.62496 0.0851249 1.83105 0.239635 1.98544L6.9208 8.66685C7.0758 8.82161 7.28275 8.90661 7.50275 8.90612C7.7236 8.90661 7.93042 8.82161 8.0853 8.66685Z"
+                fill="black" />
+            </svg>
+          </a>
+        </ul>
+      </div>
+    </section>
+
+    <section class="main-catalog">
+      <h2 class="visually-hidden">Список карточек котов</h2>
+      <ul class="main-catalog__list">
+        <li class="main-catalog__item" data-price="30000" data-age="2">
+          <div class="main-catalog__box">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/jason-cat-2.jpg">
+              <img class="main-catalog__img" src="img/jason-cat.jpg" width="280" height="264"
+                alt="Изображение лежащего на животе кота">
+            </picture>
+            <svg class="main-catalog__like" width="46" height="42" viewBox="0 0 46 42" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z"
+                fill="white" fill-opacity="0.5" />
+            </svg>
+            <div class="main-catalog__message-favorites" style="display: none">Добавлено в избраное</div>
+            <span class="main-catalog__discount">-40%</span>
+          </div>
+
+          <h3 class="main-catalog__name">Кот полосатый</h3>
+          <ul class="main-catalog__list-outside">
+            <li class="main-catalog__item-color">Коричневый окрас</li>
+            <li class="main-catalog__item-age">
+              <div id="age">2 мес.</div>
+              <label for="age">Возраст</label>
+            </li>
+            <li class="main-catalog__item-paws">
+              <div id="paws">4</div>
+              <label for="paws">Кол-во лап</label>
+            </li>
+          </ul>
+          <p class="main-catalog__price">30 000 руб.</p>
+          <a class="main-catalog__btn" href="#">
+            <span class="main-catalog__btn-buy">Купить</span>
+            <span class="main-catalog__btn-sold" style="display: none;">Продан</span>
+          </a>
+        </li>
+
+        <li class="main-catalog__item" data-price="40000" data-age="4">
+          <div class="main-catalog__box">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/k-cat-2.jpg">
+              <img class="main-catalog__img" src="img/k-cat.jpg" width="280" height="264"
+                alt="Изображение лежащего на животе кота">
+            </picture>
+            <svg class="main-catalog__like" width="46" height="42" viewBox="0 0 46 42" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z"
+                fill="white" fill-opacity="0.5" />
+            </svg>
+            <div class="main-catalog__message-favorites" style="display: none">Добавлено в избраное</div>
+            <span class="main-catalog__discount" style="display: none;">-40%</span>
+          </div>
+
+          <h3 class="main-catalog__name">Кот полосатый</h3>
+          <ul class="main-catalog__list-outside">
+            <li class="main-catalog__item-color">Коричневый окрас</li>
+            <li class="main-catalog__item-age">
+              <div id="age">4 мес.</div>
+              <label for="age">Возраст</label>
+            </li>
+            <li class="main-catalog__item-paws">
+              <div id="paws">4</div>
+              <label for="paws">Кол-во лап</label>
+            </li>
+          </ul>
+          <p class="main-catalog__price">40 000 руб.</p>
+          <a class="main-catalog__btn main-catalog__btn-inactive" href="#">
+            <span class="main-catalog__btn-buy" style="display: none;">Купить</span>
+            <span class="main-catalog__btn-sold">Продан</span>
+          </a>
+        </li>
+
+        <li class="main-catalog__item" data-price="20000" data-age="1">
+          <div class="main-catalog__box">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/t-cat-2.jpg">
+              <img class="main-catalog__img" src="img/t-cat.jpg" width="280" height="264"
+                alt="Изображение лежащего на животе кота">
+            </picture>
+            <svg class="main-catalog__like" width="46" height="42" viewBox="0 0 46 42" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z"
+                fill="white" fill-opacity="0.5" />
+            </svg>
+            <div class="main-catalog__message-favorites" style="display: none">Добавлено в избраное</div>
+            <span class="main-catalog__discount" style="display: none;">-40%</span>
+          </div>
+
+          <h3 class="main-catalog__name">Кот полосатый</h3>
+          <ul class="main-catalog__list-outside">
+            <li class="main-catalog__item-color">Коричневый окрас</li>
+            <li class="main-catalog__item-age">
+              <div id="age">1 мес.</div>
+              <label for="age">Возраст</label>
+            </li>
+            <li class="main-catalog__item-paws">
+              <div id="paws">4</div>
+              <label for="paws">Кол-во лап</label>
+            </li>
+          </ul>
+          <p class="main-catalog__price">20 000 руб.</p>
+          <a class="main-catalog__btn" href="#">
+            <span class="main-catalog__btn-buy">Купить</span>
+            <span class="main-catalog__btn-sold" style="display: none;">Продан</span>
+          </a>
+        </li>
+
+        <li class="main-catalog__item" data-price="25000" data-age="5">
+          <div class="main-catalog__box">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/jason-cat-2.jpg">
+              <img class="main-catalog__img" src="img/jason-cat.jpg" width="280" height="264"
+                alt="Изображение лежащего на животе кота">
+            </picture>
+            <svg class="main-catalog__like" width="46" height="42" viewBox="0 0 46 42" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z"
+                fill="white" fill-opacity="0.5" />
+            </svg>
+            <div class="main-catalog__message-favorites" style="display: none">Добавлено в избраное</div>
+            <span class="main-catalog__discount" style="display: none;">-40%</span>
+          </div>
+
+          <h3 class="main-catalog__name">Кот полосатый</h3>
+          <ul class="main-catalog__list-outside">
+            <li class="main-catalog__item-color">Коричневый окрас</li>
+            <li class="main-catalog__item-age">
+              <div id="age">5 мес.</div>
+              <label for="age">Возраст</label>
+            </li>
+            <li class="main-catalog__item-paws">
+              <div id="paws">4</div>
+              <label for="paws">Кол-во лап</label>
+            </li>
+          </ul>
+          <p class="main-catalog__price">25 000 руб.</p>
+          <a class="main-catalog__btn" href="#">
+            <span class="main-catalog__btn-buy">Купить</span>
+            <span class="main-catalog__btn-sold" style="display: none;">Продан</span>
+          </a>
+        </li>
+
+        <li class="main-catalog__item" data-price="30000" data-age="2">
+          <div class="main-catalog__box">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/t-cat-2.jpg">
+              <img class="main-catalog__img" src="img/t-cat.jpg" width="280" height="264"
+                alt="Изображение лежащего на животе кота">
+            </picture>
+            <svg class="main-catalog__like" width="46" height="42" viewBox="0 0 46 42" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z"
+                fill="white" fill-opacity="0.5" />
+            </svg>
+            <div class="main-catalog__message-favorites" style="display: none">Добавлено в избраное</div>
+            <span class="main-catalog__discount">-40%</span>
+          </div>
+
+          <h3 class="main-catalog__name">Кот полосатый</h3>
+          <ul class="main-catalog__list-outside">
+            <li class="main-catalog__item-color">Коричневый окрас</li>
+            <li class="main-catalog__item-age">
+              <div id="age">2 мес.</div>
+              <label for="age">Возраст</label>
+            </li>
+            <li class="main-catalog__item-paws">
+              <div id="paws">4</div>
+              <label for="paws">Кол-во лап</label>
+            </li>
+          </ul>
+          <p class="main-catalog__price">30 000 руб.</p>
+          <a class="main-catalog__btn" href="#">
+            <span class="main-catalog__btn-buy">Купить</span>
+            <span class="main-catalog__btn-sold" style="display: none;">Продан</span>
+          </a>
+        </li>
+
+        <li class="main-catalog__item" data-price="10000" data-age="4">
+          <div class="main-catalog__box">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/k-cat-2.jpg">
+              <img class="main-catalog__img" src="img/k-cat.jpg" width="280" height="264"
+                alt="Изображение лежащего на животе кота">
+            </picture>
+            <svg class="main-catalog__like" width="46" height="42" viewBox="0 0 46 42" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z"
+                fill="white" fill-opacity="0.5" />
+            </svg>
+            <div class="main-catalog__message-favorites" style="display: none">Добавлено в избраное</div>
+            <span class="main-catalog__discount" style="display: none;">-40%</span>
+          </div>
+
+          <h3 class="main-catalog__name">Кот полосатый</h3>
+          <ul class="main-catalog__list-outside">
+            <li class="main-catalog__item-color">Коричневый окрас</li>
+            <li class="main-catalog__item-age">
+              <div id="age">4 мес.</div>
+              <label for="age">Возраст</label>
+            </li>
+            <li class="main-catalog__item-paws">
+              <div id="paws">4</div>
+              <label for="paws">Кол-во лап</label>
+            </li>
+          </ul>
+          <p class="main-catalog__price">10 000 руб.</p>
+          <a class="main-catalog__btn main-catalog__btn-inactive" href="#">
+            <span class="main-catalog__btn-buy" style="display: none;">Купить</span>
+            <span class="main-catalog__btn-sold">Продан</span>
+          </a>
+        </li>
+      </ul>
+      <button class="main-catalog__button-more">Показать еще 20</button>
+    </section>
+  </main>
+
+  <button class="btn-up" style="display: none;">
+    <svg class="btn-up__icon" width="18" height="10" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M8.0853 8.66685L14.7604 1.99166C14.9149 1.83727 15 1.63118 15 1.41142C15 1.19167 14.9149 0.985572 14.7604 0.831183L14.2689 0.339602C13.9487 0.0197263 13.4282 0.0197262 13.1084 0.339602L7.50311 5.94492L1.89157 0.333382C1.73706 0.178993 1.53109 0.0937494 1.31146 0.0937494C1.09158 0.0937494 0.885606 0.178993 0.730973 0.333382L0.239635 0.824963C0.0851249 0.979474 3.76698e-06 1.18545 3.75737e-06 1.4052C3.74777e-06 1.62496 0.0851249 1.83105 0.239635 1.98544L6.9208 8.66685C7.0758 8.82161 7.28275 8.90661 7.50275 8.90612C7.7236 8.90661 7.93042 8.82161 8.0853 8.66685Z"
+        fill="white" />
+    </svg>
+  </button>
+
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <div class="footer-box">
+        <b class="footer-slogan">Успей купить!</b>
+        <p class="footer-slogan__text">Подпишись и успей словить все акции</p>
+      </div>
+      <div class="footer-wrap">
+        <h2 class="visually-hidden">Анкета для заполнения</h2>
+        <form class="footer-form" id="form" method="get" action="">
+          <div class="footer-form__box">
+            <input class="footer-form__email" id="email" type="email" name="email" placeholder="Email" required>
+            <input class="footer-form__submit" type="submit" value="Подписаться">
+          </div>
+          <div class="footer-form__checkbox"><input class="checkbox visually-hidden" type="checkbox" id="checkbox"
+              checked><label class="footer-form__checkbox-label" for="checkbox"></label>
+            <p class="checkbox-text">Подписаться на новости</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/script.js"></script>
+</body>
+
+</html>

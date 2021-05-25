@@ -1,0 +1,43 @@
+.header-btn__nav {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: $special-black;
+  position: relative;
+}
+.header-btn__nav span,
+.header-btn__nav span::before,
+.header-btn__nav span::after {
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  left: 50%;
+  margin-left: -15px;
+  width: 30px;
+  height: 2px;
+  background-color: $basic-white;
+}
+.header-btn__nav:hover span {
+  opacity: 0.7;
+}
+.header-btn__nav span::before,
+.header-btn__nav span::after {
+  content: '';
+  display: block;
+  transition: 0.1s;
+}
+.header-btn__nav span::before {
+  transform: translateY(-5px);
+}
+.header-btn__nav span::after {
+  transform: translateY(5px);
+}
+.header-btn__nav-active span {
+  height: 0;
+}
+.header-btn__nav-active span:before {
+  transform: rotate(-45deg);
+}
+.header-btn__nav-active span:after {
+  transform: rotate(45deg);
+}

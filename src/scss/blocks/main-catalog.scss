@@ -1,0 +1,272 @@
+.main-catalog {
+  width: 320px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+.main-catalog__list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.main-catalog__item {
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: $basic-gray;
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 21px;
+}
+.main-catalog__box {
+  position: relative;
+}
+.main-catalog__like {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  top: 20px;
+  right: 20px;
+}
+.main-catalog__like:hover path {
+  fill-opacity: 1;
+}
+//классы для клика на лайк
+.main-catalog__like-active path {
+  fill: $special-red;
+  fill-opacity: 1;
+}
+.main-catalog__message-favorites {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  width: 100px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 15px;
+  border-radius: 10px;
+  border: 1px solid $special-blue;
+  background-color: $special-lemon;
+  text-align: center;
+  box-shadow: 0px 0px 24px $basic-black;
+  opacity: 0.7;
+}
+//
+.main-catalog__discount {
+  position: absolute;
+  top: 23px;
+  left: 20px;
+  width: 58px;
+  height: 29px;
+  background: $special-other-red;
+  border-radius: 10px;
+  color: $basic-white;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  padding-top: 5px;
+}
+.main-catalog__name {
+  margin-left: 15px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  color: $basic-black;
+}
+.main-catalog__list-outside {
+  margin-left: 15px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-bottom: 16px;
+}
+.main-catalog__item-color {
+  position: relative;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  padding-left: 18px;
+  width: 90px;
+}
+.main-catalog__item-color::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 26px;
+  left: 0;
+  top: 2px;
+  background-color: $special-other-blue;
+}
+#age, #paws {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+}
+.main-catalog__item-age label, .main-catalog__item-paws label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+.main-catalog__price {
+  margin: 0;
+  margin-left: 15px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+.main-catalog__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 60px;
+  background-color: $special-other-blue;
+  border-radius: 0 0 10px 10px;
+}
+.main-catalog__btn:hover {
+  background-color: $special-o-blue;
+}
+.main-catalog__btn:active {
+  opacity: 0.8;
+}
+.main-catalog__btn-buy, .main-catalog__btn-sold {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic-white;
+}
+//для карточки с проданым котом
+.main-catalog__btn-inactive {
+  background-color: $special-o-black;
+  pointer-events: none;
+}
+//
+.main-catalog__button-more {
+  display: block;
+  margin: 0 auto;
+  width: 280px;
+  height: 60px;
+  border: 1px solid $special-o-gray;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: $basic-white;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 20px;
+}
+.main-catalog__button-more:hover {
+  background-color: $basic-gray;
+}
+.main-catalog__button-more:active {
+  opacity: 0.6;
+}
+
+@media (min-width: $tablet-width) {
+  .main-catalog {
+    width: 768px;
+    padding-left: 94px;
+    padding-right: 94px;
+    margin: 0 auto;
+  }
+  .main-catalog__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .main-catalog__item {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-catalog {
+    width: 1440px;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+  .main-catalog__list {
+    gap: 20px;
+    margin-bottom: 68px;
+  }
+  .main-catalog__item {
+    width: 380px;
+    margin: 0;
+    margin-bottom: 7px;
+  }
+  .main-catalog__img {
+    width: 380px;
+    height: 264px;
+  }
+  .main-catalog__like {
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    top: 34px;
+    right: 32px;
+  }
+  .main-catalog__message-favorites {
+    top: 80px;
+    right: 30px;
+  }
+  .main-catalog__discount {
+    top: 34px;
+    left: 38px;
+    width: 78px;
+    height: 39px;
+    padding-top: 10px;
+  }
+  .main-catalog__name {
+    margin-left: 29px;
+    margin-top: 29px;
+    margin-bottom: 22px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .main-catalog__list-outside {
+    margin-left: 29px;
+    gap: 0;
+    margin-bottom: 22px;
+  }
+  .main-catalog__item-color {
+    margin-right: 28px;
+  }
+  .main-catalog__item-age {
+    margin-right: 48px;
+  }
+  #age, #paws {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .main-catalog__price {
+    margin-left: 29px;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 29px;
+  }
+  .main-catalog__btn {
+    min-height: 65px;
+  }
+  .main-catalog__button-more {
+    width: 380px;
+    height: 65px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 83px;
+  }
+}
